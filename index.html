@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HEYYANIXX — Video Editor · AI Creator · Gamer · YouTuber</title>
+<meta name="description" content="HEYYANIXX — creative studio, Free Fire MAX gamer and AI services. Video editing, AI video, photo editing, prompts, websites, AI agents and automation. Request a quote on WhatsApp.">
+<meta name="theme-color" content="#07070a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HEYYANIXX — Creator · Editor · Gamer · Visual Artist">
+<meta property="og:description" content="I turn ideas into cinematic visuals, edits and digital experiences.">
+<link rel="canonical" href="https://portfolio.heyyanixx.de5.net/">
+<meta property="og:url" content="https://portfolio.heyyanixx.de5.net/">
+<meta property="og:image" content="https://portfolio.heyyanixx.de5.net/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="prompts.css?v=1">
+<script type="module" src="js/app.js"></script>
+<script defer src="js/prompts.js?v=1"></script>
+<script type="module" src="js/arcade-loader.js?v=2"></script>
+</head>
+<body class="is-loading">
+
+<div class="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="logo-slot logo-slot--loader" data-logo aria-hidden="true"></div><div class="loader__word">HEYYANIXX</div>
+    <div class="loader__bar"><span></span></div>
+    <div class="loader__meta"><span>Entering the world</span><span class="loader__pct">00</span></div>
+  </div>
+</div>
+
+<!-- ===== HEYYANIXX NETFLIX-STYLE INTRO =====
+     WHERE: index.html, immediately AFTER the closing </div> of <div class="loader"> (line ~30),
+            before <div class="grain">. It is hidden by default, so with JS off nothing shows.
+     Assets: site/fonts/bebas-neue.woff2 (copy from this handoff). -->
+<div class="intro" id="intro" hidden role="dialog" aria-modal="true" aria-label="Intro" tabindex="-1">
+  <div class="intro__bg" aria-hidden="true"><i class="intro__burst"></i><i class="intro__rays"></i></div>
+  <button type="button" class="intro__skip" data-intro-skip>Skip intro <kbd>Esc</kbd></button>
+
+  <div class="intro__reveal">
+    <div class="intro__logo" data-intro-logo hidden></div>
+    <h2 class="intro__word"><span class="intro__word-txt" data-text="HEYYANIXX">HEYYANIXX</span></h2>
+  </div>
+</div>
+<!-- ===== /INTRO ===== -->
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><em class="cursor__label">View</em></span></div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="nav__brand magnetic" href="#hero" aria-label="HEYYANIXX — back to top"><span class="nav__mark">HX</span><span class="nav__name">HEYYANIXX</span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#create">Services</a>
+    <a href="#prompts">Prompts</a>
+    <a href="#gaming">Gaming</a>
+    <a href="#lab">AI Lab</a>
+    <a href="#store">Store</a>
+    <a href="#about">About</a>
+  </nav>
+  <button type="button" class="nav__sound" id="sound-toggle" aria-pressed="false" aria-label="Sound off — turn on music and sound effects"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><em>Sound</em></button>
+  <button type="button" class="nav__replay" id="sound-replay" hidden aria-label="Play the soundtrack again (about 20 seconds)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 4v4.6h4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><em>Replay</em></button>
+  <button type="button" class="nav__search" id="open-palette" aria-label="Search the site (Ctrl+K)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><kbd>⌘K</kbd></button>
+  <a class="btn btn--solid btn--sm magnetic nav__cta" href="#contact"><span>Let's create</span><i class="arrow">↗</i></a>
+  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Mobile">
+    <a href="#work"><i>01</i>Work</a>
+    <a href="#create"><i>02</i>Services</a>
+    <a href="#prompts"><i>03</i>AI Prompts</a>
+    <a href="#gaming"><i>04</i>Gaming</a>
+    <a href="#lab"><i>05</i>AI Lab</a>
+    <a href="#store"><i>06</i>Store</a>
+    <a href="#about"><i>07</i>About</a>
+    <a href="#contact"><i>08</i>Let's create ↗</a>
+  </nav>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="hero" aria-label="Intro">
+  <div class="hero__head" aria-hidden="true"><img class="hero__head-img" src="assets/hero/head-04.webp" alt="" width="640" height="800" fetchpriority="high" decoding="async"></div>
+  <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero__fallback" aria-hidden="true"></div>
+  <div class="hero__vignette" aria-hidden="true"></div>
+  <div class="hero__content">
+    <div class="logo-slot logo-slot--hero" data-logo aria-hidden="true"></div>
+    <p class="label hero__eyebrow reveal"><span class="dot"></span>Hey, I'm</p>
+    <h1 class="hero__title" aria-label="HEYYANIXX"><span class="split" data-split>HEYYANIXX</span></h1>
+    <p class="hero__subtitle label reveal" data-delay="2">Video Editor <b>•</b> AI Creator <b>•</b> Photo Editor <b>•</b> Gamer <b>•</b> YouTuber</p>
+    <p class="hero__desc reveal" data-delay="3">I CREATE DIGITAL EXPERIENCES.</p>
+    <p class="hero__small reveal" data-delay="4">Video Editing · AI · Photo · Gaming · Web · Automation</p>
+    <p class="label hero__path reveal" data-delay="5">Select your path</p>
+    <div class="hero__ctas hero__ctas--3 reveal" data-delay="5">
+      <a class="btn btn--solid magnetic" href="#work"><span>View my work</span><i class="arrow">→</i></a>
+      <a class="btn btn--glass magnetic" href="#create"><span>Hire me</span></a>
+      <a class="btn btn--glass magnetic" href="#lab"><span>Explore AI Lab</span></a>
+      <a class="btn btn--glass magnetic" href="#get-app"><span>⬇ Get the App</span></a>
+      <a class="btn btn--solid btn--play magnetic" href="#play" data-play=""><span>🎮 Play Games</span></a>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#work"><span>Scroll to explore</span><i>↓</i></a>
+  <div class="hero__corner hero__corner--l label" aria-hidden="true">HX — 2026</div>
+  <div class="hero__corner hero__corner--r label" aria-hidden="true">7+ yrs Free Fire</div>
+</section>
+<!-- WHAT I DO — pinned chapter section (insert directly after </section> of #hero) -->
+<section class="chap" id="whatido" aria-label="What I do">
+  <div class="chap__stage">
+    <canvas class="chap__smoke" aria-hidden="true"></canvas>
+    <div class="chap__glow" aria-hidden="true"></div>
+    <div class="chap__floor" aria-hidden="true"></div>
+    <div class="chap__figure chap__figure--photos" aria-hidden="true">
+      <img class="chap__photo is-on" data-i="0" src="assets/chapters/ch1.webp" alt="" width="366" height="1000" loading="lazy" fetchpriority="low" decoding="async">
+      <img class="chap__photo" data-i="1" src="assets/chapters/ch2.webp" alt="" width="347" height="1000" loading="lazy" fetchpriority="low" decoding="async">
+      <img class="chap__photo" data-i="2" src="assets/chapters/ch3.webp" alt="" width="294" height="1000" loading="lazy" fetchpriority="low" decoding="async">
+      <img class="chap__photo" data-i="3" src="assets/chapters/ch4.webp" alt="" width="412" height="1000" loading="lazy" fetchpriority="low" decoding="async">
+      <i class="chap__rim"></i>
+      <i class="chap__sweep"></i>
+    </div>
+    <div class="chap__shade" aria-hidden="true"></div>
+
+    <header class="chap__head">
+      <p class="label"><span class="dot"></span><b>Services</b> · 4 chapters</p>
+      <h2 class="chap__title"><span class="split" data-split>What I do</span></h2>
+    </header>
+
+    <ol class="chap__prog" aria-hidden="true">
+      <li class="is-on"><b>01</b><i></i></li>
+      <li><b>02</b><i></i></li>
+      <li><b>03</b><i></i></li>
+      <li><b>04</b><i></i></li>
+    </ol>
+
+    <div class="chap__items">
+      <article class="chap__item chap__item--l is-on" data-glow="#e3b65a" data-i="0" style="--c:#e3b65a">
+        <p class="label chap__eyebrow"><span class="idx">01</span>Video Editing</p>
+        <h3 class="chap__h"><span class="chap__line">Turning footage</span><span class="chap__line chap__line--acc">into emotions</span></h3>
+        <p class="chap__p">Reels, Shorts, YouTube videos, cinematic edits and gaming montages, cut so every beat lands.</p>
+        <ul class="chap__chips">
+          <li data-svc="video" data-item="Reels / Shorts">Reels / Shorts <b>₹499+</b></li>
+          <li data-svc="video" data-item="Gaming montage">Gaming montage <b>₹999+</b></li>
+        </ul>
+      </article>
+      <article class="chap__item chap__item--r" data-glow="#38d9ff" data-i="1" style="--c:#38d9ff">
+        <p class="label chap__eyebrow"><span class="idx">02</span>AI Visuals</p>
+        <h3 class="chap__h"><span class="chap__line">Turning ideas</span><span class="chap__line chap__line--acc">into AI visuals</span></h3>
+        <p class="chap__p">AI-enhanced reels, AI cinematic video and AI character concepts, plus prompts built for cinematic results.</p>
+        <ul class="chap__chips">
+          <li data-svc="aivideo" data-item="AI cinematic video">AI cinematic video <b>₹1,499+</b></li>
+          <li data-svc="prompts" data-item="Custom image prompt">Custom image prompt <b>₹199+</b></li>
+        </ul>
+      </article>
+      <article class="chap__item chap__item--l" data-glow="#ff3fa8" data-i="2" style="--c:#ff3fa8">
+        <p class="label chap__eyebrow"><span class="idx">03</span>Photo Editing</p>
+        <h3 class="chap__h"><span class="chap__line">Making every</span><span class="chap__line chap__line--acc">frame click</span></h3>
+        <p class="chap__p">Professional retouching, cinematic photo edits, AI photo manipulation and premium posters.</p>
+        <ul class="chap__chips">
+          <li data-svc="photo" data-item="Professional retouch">Professional retouch <b>₹299+</b></li>
+          <li data-svc="photo" data-item="Premium poster">Premium poster <b>₹999+</b></li>
+        </ul>
+      </article>
+      <article class="chap__item chap__item--r" data-glow="#4dff8a" data-i="3" style="--c:#4dff8a">
+        <p class="label chap__eyebrow"><span class="idx">04</span>Gaming</p>
+        <h3 class="chap__h"><span class="chap__line">Playing</span><span class="chap__line chap__line--acc">to win</span></h3>
+        <p class="chap__p">Free Fire MAX for <span data-g="years">7+</span> years, <span data-g="rank">Heroic</span> rank, guild <span data-g="guild">The Mafia</span>. Paid custom rooms and spots on my squad.</p>
+        <ul class="chap__chips">
+          <li data-gaming="level">Lv. 72 · <b>Heroic</b></li>
+          <li data-svc="rooms">Paid custom rooms <b>Quote on request</b></li>
+        </ul>
+      </article>
+    </div>
+
+    <a class="chap__next label" href="#work">Scroll<i>↓</i></a>
+  </div>
+</section>
+
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>I create digital experiences <i>✦</i></span>
+    <span>Video Editing <i>✦</i> AI <i>✦</i> Photo <i>✦</i> Gaming <i>✦</i> Web <i>✦</i> Automation <i>✦</i></span>
+    <span>I create digital experiences <i>✦</i></span>
+    <span>Video Editing <i>✦</i> AI <i>✦</i> Photo <i>✦</i> Gaming <i>✦</i> Web <i>✦</i> Automation <i>✦</i></span>
+  </div>
+</div>
+
+
+<!-- 360 IDENTITY -->
+<section class="ident section" id="identity" aria-labelledby="ident-title">
+  <div class="ident__rim" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="label reveal"><span class="idx">00</span> 360° Identity</p>
+        <h2 class="h2 h2--xl" id="ident-title"><span class="split" data-split>THE FACE</span> <span class="split" data-split>BEHIND IT.</span></h2>
+      </div>
+      <p class="body reveal ident__note">Drag to turn me around. Switch the fit. Move your cursor and I'll look where you look.<span class="sig">— Mafia Anish</span></p>
+    </div>
+    <div class="ident__grid">
+      <div class="spin reveal" id="spin" aria-label="360 degree view of HEYYANIXX. Drag to rotate." role="img">
+        <canvas class="spin__chrome" id="spin-chrome" aria-hidden="true"></canvas>
+        <div class="spin__stage" id="spin-stage"></div>
+        <div class="spin__floor" aria-hidden="true"></div>
+        <div class="spin__dial" id="spin-dial" aria-hidden="true"></div>
+        <p class="spin__hint label" aria-hidden="true"><span class="hint-desk">Drag to rotate</span><span class="hint-touch">Swipe to rotate</span></p>
+      </div>
+      <div class="ident__side">
+        <div class="fits reveal" role="radiogroup" aria-label="Outfit">
+          <button type="button" class="fit" role="radio" data-fit="black" aria-checked="true"><span class="fit__sw fit__sw--black"></span>Black</button>
+          <button type="button" class="fit" role="radio" data-fit="yellow" aria-checked="false"><span class="fit__sw fit__sw--yellow"></span>Yellow</button>
+          <button type="button" class="fit" role="radio" data-fit="white" aria-checked="false"><span class="fit__sw fit__sw--white"></span>White</button>
+        </div>
+        <div class="look reveal" id="look">
+          <div class="look__face" id="look-face"><img id="look-img" src="assets/id/black-e-neutral.webp" alt="HEYYANIXX expression" width="240" height="210" loading="lazy" decoding="async"><span class="look__label label" id="look-label">Neutral</span></div>
+          <div class="look__strip" id="look-strip" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tk section" id="toolkit" aria-labelledby="toolkit-title">
+  <div class="wrap section__head tk__head">
+    <p class="label reveal"><span class="idx">✦</span> Editing <b>·</b> My toolkit</p>
+    <h2 class="h2 h2--xl" id="toolkit-title"><span class="split" data-split>MY EDITING</span> <span class="split" data-split>TOOLKIT.</span></h2>
+  </div>
+  <div class="tk__stage" id="tk-stage">
+    <div class="tk__sun" aria-hidden="true"><i class="tk__tex"></i><i class="tk__tex tk__tex--b"></i><i class="tk__rays"></i><i class="tk__corona"></i></div>
+    <div class="tk__embers" aria-hidden="true"></div>
+    <img class="tk__figure tk__figure--photo" src="assets/id/toolkit-standing.webp" alt="" width="368" height="1000" loading="lazy" decoding="async">
+    <div class="tk__floor" aria-hidden="true"></div>
+    <ul class="tk__arc" id="tk-arc" aria-label="Editing apps I use"></ul>
+  </div>
+  <p class="body tk__note reveal">The apps behind every edit. Hover or tap an icon to see its name.</p>
+</section>
+
+<!-- WORK -->
+<section class="work section" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="label reveal"><span class="idx">01</span> Portfolio</p>
+        <h2 class="h2 h2--xl" id="work-title"><span class="split" data-split>SELECTED</span> <span class="split" data-split>WORK</span></h2>
+      </div>
+      <p class="body work__note reveal">A real local business promo, Instagram edits and reels playing live, plus more of my work on the way. Tap a project to open it.</p>
+    </div>
+    <div class="filters reveal" role="tablist" aria-label="Filter work by category" id="filters"></div>
+    <div class="gallery" id="gallery" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- YT WORKS -->
+<section class="ytworks section" id="yt-works" aria-labelledby="ytworks-title">
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="label reveal"><span class="idx">01b</span> YouTube</p>
+        <h2 class="h2 h2--xl" id="ytworks-title"><span class="split" data-split>YT</span> <span class="split" data-split>WORKS</span></h2>
+      </div>
+    </div>
+    <a class="ytb reveal" data-link="youtube" href="https://www.youtube.com/@smart_anish69" aria-label="Smart_anish69 on YouTube: 140 subscribers, 21 videos. Subscribe">
+      <span class="ytb__art" aria-hidden="true"><img src="assets/yt/banner.webp" alt="" width="2028" height="326" loading="lazy" decoding="async"></span>
+      <span class="ytb__shade" aria-hidden="true"></span>
+      <span class="ytb__row">
+        <span class="ytb__av"><img src="assets/yt/avatar.jpg" alt="" width="360" height="360" loading="lazy" decoding="async"></span>
+        <span class="ytb__info"><b class="ytb__name">@Smart_anish69</b><span class="ytb__stats"><b data-ytnum="subscribers">140</b> subscribers · <b data-ytnum="videos">21</b> videos</span><span class="ytb__tag">Welcome to my Gaming World!</span></span>
+        <span class="ytb__sub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg>Subscribe</span>
+      </span>
+    </a>
+    <p class="label ytw-row__label reveal">Live streams</p>
+    <div class="ytw-row ytw-row--wide" id="yt-live"></div>
+    <p class="label ytw-row__label reveal">Shorts</p>
+    <div class="ytw-row ytw-row--shorts" id="yt-shorts"></div>
+  </div>
+</section>
+
+<!-- LET'S CREATE / SERVICES -->
+<section class="market section" id="create" aria-labelledby="create-title">
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="label reveal"><span class="idx">02</span> Services</p>
+        <h2 class="h2 h2--xl" id="create-title"><span class="split" data-split>LET'S CREATE.</span></h2>
+      </div>
+      <p class="body reveal market__note">Pick a service. Prices are starting points; bigger projects get a custom quote. Every request comes straight to me by email or Instagram DM.</p>
+    </div>
+    <div class="market__ui">
+      <div class="market__cats reveal" id="market-cats" role="tablist" aria-label="Service categories"></div>
+      <div class="market__stage reveal" id="market-stage">
+        <div class="mcard tilt" id="mcard" data-tilt="8" role="tabpanel" aria-live="polite"></div>
+        <div class="mcard__ghost mcard__ghost--1" aria-hidden="true"></div>
+        <div class="mcard__ghost mcard__ghost--2" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI PROMPT LIBRARY — free trending image & video prompts with AI-generated samples (prompts.js / prompts.css) -->
+<section class="pl section" id="prompts" aria-labelledby="prompts-title">
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="label reveal"><span class="idx">AI</span> Free prompt library</p>
+        <h2 class="h2" id="prompts-title"><span class="split" data-split>AI PROMPT</span> <span class="split" data-split>LIBRARY.</span></h2>
+      </div>
+      <p class="body reveal pl__note">Trending image &amp; video prompts + step-by-step AI flows. Copy karo, <b class="pl-gold">gold</b> wale words apne hisaab se badlo, generate karo. Har sample real AI output hai.</p>
+    </div>
+    <div class="pl-tabs" role="tablist" aria-label="Prompt types">
+      <button type="button" class="pl-tab" role="tab" id="pl-tab-image" data-tab="image" aria-controls="pl-panel-image" aria-selected="true">🖼️ Image Prompts <i>16</i></button>
+      <button type="button" class="pl-tab" role="tab" id="pl-tab-video" data-tab="video" aria-controls="pl-panel-video" aria-selected="false" tabindex="-1">🎥 Video Prompts <i>8</i></button>
+      <button type="button" class="pl-tab" role="tab" id="pl-tab-flow" data-tab="flow" aria-controls="pl-panel-flow" aria-selected="false" tabindex="-1">🔁 AI Flows <i>4</i></button>
+    </div>
+    <div class="pl-panel" role="tabpanel" id="pl-panel-image" aria-labelledby="pl-tab-image">
+      <div class="pl-chips" id="pl-chips-image" aria-label="Image prompt categories"></div>
+      <div class="pl-grid" id="pl-grid-image"></div>
+    </div>
+    <div class="pl-panel" role="tabpanel" id="pl-panel-video" aria-labelledby="pl-tab-video" hidden>
+      <div class="pl-chips" id="pl-chips-video" aria-label="Video prompt categories"></div>
+      <div class="pl-grid" id="pl-grid-video"></div>
+    </div>
+    <div class="pl-panel" role="tabpanel" id="pl-panel-flow" aria-labelledby="pl-tab-flow" hidden>
+      <div class="pl-grid pl-grid--flow" id="pl-grid-flow"></div>
+    </div>
+    <div class="pl-foot">
+      <p>Samples = AI-generated, prompts original. Result har tool me thoda alag aata hai — 2-3 baar generate karke best chuno. Real logos, celebrities ya copyrighted characters prompts me mat daalo.</p>
+      <p>Custom prompt pack chahiye? <a href="#create">Custom image prompt ₹199+ →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- GAMING — "HEYYANIXX Gaming" neon-sunset hero (gaming2). The left menu is the tablist for the panels below. -->
+<section class="gta g2 section" id="gaming" aria-labelledby="gaming-title">
+  <div class="g2__stage" id="g2-stage">
+    <div class="g2__scene" aria-hidden="true">
+      <div class="g2__layer g2__bg">
+        <img src="assets/game2/scene.webp" srcset="assets/game2/scene-m.webp 1200w, assets/game2/scene.webp 2400w" sizes="(max-width:760px) 220vw, 106vw" alt="" width="2400" height="1493" decoding="async">
+        <span class="g2__sign"><b>Heyyanixx</b><em>Gaming</em></span>
+        <i class="g2__tail g2__tail--l"></i><i class="g2__tail g2__tail--r"></i><i class="g2__under"></i>
+      </div>
+      <div class="g2__clouds"></div>
+      <div class="g2__sun"></div>
+      <div class="g2__shimmer"></div>
+      <div class="g2__layer g2__char">
+        <div class="g2c">
+          <i class="g2c__shadow"></i>
+          <div class="g2c__lean"><div class="g2c__sway">
+            <img class="g2c__rim g2c__rim--p" src="assets/game2/rim-pink.webp" alt="" width="360" height="882" loading="lazy" decoding="async">
+            <img class="g2c__rim g2c__rim--g" src="assets/game2/rim-green.webp" alt="" width="360" height="882" loading="lazy" decoding="async">
+            <img class="g2c__refl" src="assets/game2/ff-player.webp" alt="" width="720" height="1764" loading="lazy" decoding="async">
+            <img class="g2c__legs" src="assets/game2/ff-player.webp" alt="" width="720" height="1764" loading="lazy" decoding="async">
+            <img class="g2c__torso" src="assets/game2/ff-player.webp" alt="" width="720" height="1764" loading="lazy" decoding="async">
+          </div></div>
+        </div>
+      </div>
+      <div class="g2__shade"></div>
+    </div>
+
+    <div class="g2__ui">
+      <nav class="g2__menu" aria-label="Gaming menu">
+        <div class="g2__tabs" role="tablist" aria-label="Gaming menu" aria-orientation="vertical" id="pmenu-tabs">
+          <button role="tab" id="pt-player" aria-controls="pp-player" aria-selected="true" tabindex="0" data-stamp="Player card"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 5v14l12-7z"/></svg></i><span>START GAME</span></button>
+          <button role="tab" id="pt-arcade" aria-controls="pp-arcade" aria-selected="false" tabindex="-1" data-stamp="Mini games" class="g2tab--play"><i aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="11" rx="5"/><path d="M7.5 10.5v4M5.5 12.5h4"/><circle cx="15.5" cy="11.5" r="1.1"/><circle cx="18" cy="14" r="1.1"/></svg></i><span>PLAY GAMES 🎮</span></button>
+          <button role="tab" id="pt-brief" aria-controls="pp-brief" aria-selected="false" tabindex="-1" data-stamp="Brief"><i aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.5-6.5 8-6.5s7 2 8 6.5"/></svg></i><span>ABOUT ME</span></button>
+          <button role="tab" id="pt-char" aria-controls="pp-char" aria-selected="false" tabindex="-1" data-stamp="Character"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5L12 14.4 7.5 16.8l.9-5L4.8 8.3l5-.7z"/></svg></i><span>CHARACTER</span></button>
+          <button role="tab" id="pt-stats" aria-controls="pp-stats" aria-selected="false" tabindex="-1" data-stamp="Stats"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 20V11M12 20V5M19 20v-7"/></svg></i><span>STATS</span></button>
+          <button role="tab" id="pt-loadout" aria-controls="pp-loadout" aria-selected="false" tabindex="-1" data-stamp="Loadout"><i aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2v5M12 17v5M2 12h5M17 12h5"/></svg></i><span>LOADOUT</span></button>
+          <button role="tab" id="pt-badges" aria-controls="pp-badges" aria-selected="false" tabindex="-1" data-stamp="Badges"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8"/></svg></i><span>ACHIEVEMENTS</span></button>
+          <button role="tab" id="pt-rooms" aria-controls="pp-rooms" aria-selected="false" tabindex="-1" data-stamp="Custom rooms"><i aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="11" rx="5"/><path d="M8 11v3M6.5 12.5h3M15 11.5h.01M17.5 13.5h.01"/></svg></i><span>CUSTOM ROOMS</span></button>
+          <button role="tab" id="pt-live" aria-controls="pp-live" aria-selected="false" tabindex="-1" data-stamp="Live"><i aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/></svg></i><span>LIVE STREAMS</span></button>
+        </div>
+      </nav>
+
+      <div class="g2__head">
+        <p class="label g2__kicker"><span class="idx">03</span> <span data-g="game">Free Fire MAX</span> · Gaming world</p>
+        <h2 class="g2__title" id="gaming-title" aria-label="HEYYANIXX Gaming"><span class="g2__name">HEYYANIXX</span><span class="g2__script gta__script" aria-hidden="true">Gaming</span></h2>
+        <p class="g2__tag">7+ years. One game. <b>Same passion.</b></p>
+      </div>
+
+      <div class="g2__chip" aria-label="Player HEYYANIXX, level 72, 13,260 likes, rank Heroic">
+        <span class="g2__ava"><img src="assets/ff/avatar-crown.webp" alt="" width="384" height="384" loading="lazy" decoding="async"></span>
+        <span class="g2__who"><b><span data-g="ign">HEYYANIXX</span> <svg class="g2__tick" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg></b><span class="g2__meta"><span>Lv. <span data-g="level">72</span></span><span>👍 <span id="g2-likes">13,260</span></span></span></span>
+        <span class="g2__rank"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g2emb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1bd"/><stop offset=".5" stop-color="#ffb347"/><stop offset="1" stop-color="#b3541a"/></linearGradient></defs><path d="M32 4l7 6 9-1 2 9 8 5-4 8 4 8-8 5-2 9-9-1-7 6-7-6-9 1-2-9-8-5 4-8-4-8 8-5 2-9 9 1z" fill="#1a0b14" stroke="url(#g2emb)" stroke-width="2.5"/><path d="M32 17l4.4 9 9.6 1.4-7 6.8 1.7 9.6L32 39.3l-8.7 4.5 1.7-9.6-7-6.8 9.6-1.4z" fill="url(#g2emb)"/></svg><em data-g="rank">Heroic</em></span>
+      </div>
+
+      <div class="g2__gear">
+        <button class="g2vc g2vc--hero" type="button" data-video="assets/game/intro.mp4" data-poster="assets/game/intro-poster.webp" data-cap="My gaming edit" aria-label="Play my gaming edit with sound">
+          <span class="g2vc__frame">
+            <img class="g2vc__poster" src="assets/game/intro-poster.webp" alt="" width="432" height="768" loading="lazy" decoding="async">
+            <video class="g2vc__vid" data-src="assets/game2/edit-loop.mp4" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1"></video>
+            <i class="g2vc__tag" aria-hidden="true">My edit</i>
+            <i class="g2vc__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i>
+          </span>
+        </button>
+        <button class="g2__gearup" type="button" data-video="assets/game/intro.mp4" data-poster="assets/game/intro-poster.webp" data-cap="My gaming edit" aria-label="Play my gaming edit with sound">Gear up <svg viewBox="0 0 80 40" aria-hidden="true"><path d="M4 30c18 4 40 0 60-18M50 10l16 1-3 15"/></svg></button>
+      </div>
+
+      <button class="g2__uid" type="button" id="g2-uid" aria-label="Copy Free Fire MAX UID 740580468">
+        <span class="g2__uidava"><img src="assets/ff/avatar-crown.webp" alt="" width="384" height="384" loading="lazy" decoding="async"></span>
+        <span class="g2__uidtxt"><em>Free Fire MAX UID</em><b data-g="uid">740580468</b><small>Tap to copy</small></span>
+        <svg class="g2__copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+      </button>
+
+      <div class="g2__tiles">
+        <button class="g2__playcta" type="button" data-play=""><span class="g2__playcta-ic" aria-hidden="true">🎮</span><span><b>PLAY MINI GAMES</b><small>Sled Rush · Stack · Jump · Aim Rush</small></span><span class="g2__playcta-go" aria-hidden="true">▶</span></button>
+        <button class="g2__tile g2__tile--rank" type="button" data-go="pt-live"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg></i><b>Rank push</b><span>Live streams</span></button>
+        <button class="g2__tile g2__tile--custom" type="button" data-go="pt-rooms"><i aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="11" rx="5"/><path d="M8 11v3M6.5 12.5h3M15 11.5h.01M17.5 13.5h.01"/></svg></i><b>Custom rooms</b><span>For subscribers</span></button>
+        <button class="g2__tile g2__tile--paid" type="button" data-go="pt-rooms"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8"/></svg></i><b>Paid rooms</b><span>&amp; tournaments</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap g2__wrap">
+    <div class="pmenu" id="pmenu">
+      <div class="pmenu__screen g2__screen" id="pmenu-screen">
+        <div class="g2__bar" aria-hidden="true"><span class="g2__now" id="g2-now">Player card</span><span class="g2__hud"><span class="hud-clock" id="hud-clock">--:--</span><span class="hud-lv">LV <b data-g="level">72</b></span><span class="hud-likes">👍 <b id="hud-likes">13,260</b></span></span></div>
+        <div class="pmenu__body">
+          <div class="ppanel is-active" role="tabpanel" id="pp-player" aria-labelledby="pt-player">
+            <div class="ppanel__player">
+              <div class="holo holo--card" id="holo">
+                <div class="holo__plane" id="holo-plane">
+                  <div class="holo__floor" aria-hidden="true"></div>
+                  <div class="holo__ring" aria-hidden="true"></div>
+                  <div class="holo__ring holo__ring--2" aria-hidden="true"></div>
+                  <div class="holo__glow" aria-hidden="true"></div>
+                  <div class="holo__shadow" aria-hidden="true"></div>
+                  <div class="holo__particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="ffc-float">
+          <div class="ffc" id="ffc" data-cursor="flip">
+            <div class="ffc__inner">
+              <!-- FRONT: recreates the in-game profile banner -->
+              <section class="ffc__face ffc__front" aria-label="Free Fire MAX profile card, front">
+                <div class="ffc__stripes" aria-hidden="true"></div>
+                <div class="ffc__slab" aria-hidden="true"></div>
+                <div class="ffc__top">
+                  <p class="ffc__mark" aria-label="Free Fire MAX"><span class="ffc__mark-ff">FREE FIRE</span><span class="ffc__mark-max">MAX</span></p>
+                  <p class="ffc__guild"><svg class="ffc__crest" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="crestG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset=".45" stop-color="#f1c24b"/><stop offset="1" stop-color="#9a6a12"/></linearGradient></defs><path d="M32 2 58 12v18c0 15-11 26-26 32C17 56 6 45 6 30V12z" fill="#0b0904" stroke="url(#crestG)" stroke-width="3"/><path fill="url(#crestG)" d="M32 13c-3 0-5 1.6-6.4 3.4-2.6-.6-5.5.6-6.6 3.2-2.4.6-3.9 3-3.4 5.6-1.8 1.7-2.1 4.6-.6 6.6-.6 2.5.7 5.1 3 6.1.3 2.5 2.4 4.5 5 4.6 1.4 2.2 4.1 3.4 6.7 2.8.7.3 1.5.5 2.3.5s1.6-.2 2.3-.5c2.6.6 5.3-.6 6.7-2.8 2.6-.1 4.7-2.1 5-4.6 2.3-1 3.6-3.6 3-6.1 1.5-2 1.2-4.9-.6-6.6.5-2.6-1-5-3.4-5.6-1.1-2.6-4-3.8-6.6-3.2C37 14.6 35 13 32 13z"/><path fill="#0b0904" d="M24.5 27.5c1.6-1.4 4.2-1.3 5.4.4-1.9.2-3.6.9-5.4-.4zm15 0c-1.6-1.4-4.2-1.3-5.4.4 1.9.2 3.6.9 5.4-.4zM32 31.5l-3.2 5.2c1 1.3 2.1 2 3.2 2s2.2-.7 3.2-2zm-6.4 8.3c2.2 2.6 4.3 3.7 6.4 3.7s4.2-1.1 6.4-3.7c-1.6 4.6-3.8 6.9-6.4 6.9s-4.8-2.3-6.4-6.9z"/></svg><span><em>Guild</em><b data-g="guild">The Mafia</b></span></p>
+                </div>
+                <div class="ffc__id">
+                  <div class="ffc__avatar"><img src="assets/ff/avatar-crown.webp" alt="HEYYANIXX's gold crown avatar" width="384" height="384" loading="lazy" decoding="async"></div>
+                  <div class="ffc__who">
+                    <p class="ffc__ign" data-g="ign">HEYYANIXX</p>
+                    <p class="ffc__lang"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19"/></svg><span data-g="language">English</span></p>
+                  </div>
+                </div>
+                <div class="ffc__row">
+                  <div class="ffc__stat ffc__stat--lvl"><em>Level</em><b>Lv. <span data-ffcount="level">72</span></b></div>
+                  <div class="ffc__stat ffc__stat--likes"><em>Likes</em><b><span class="ffc__thumb" aria-hidden="true">👍</span><span data-ffcount="likes">13,260</span></b></div>
+                  <button class="ffc__uid" type="button" id="ffc-uid" aria-label="Copy UID 740580468"><em>UID · tap to copy</em><b><span data-g="uid">740580468</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></b></button>
+                </div>
+                <button class="ffc__flipbtn" type="button" aria-controls="ffc" aria-label="Flip card to see rank, badges and loadout"><span aria-hidden="true">↻</span> Flip</button>
+                <div class="ffc__foil" aria-hidden="true"></div>
+                <div class="ffc__sweep" aria-hidden="true"></div>
+              </section>
+              <!-- BACK: profile stats -->
+              <section class="ffc__face ffc__back" aria-label="Free Fire MAX profile card, back: stats">
+                <div class="ffc__stripes ffc__stripes--back" aria-hidden="true"></div>
+                <div class="ffc__btop"><p class="ffc__mark ffc__mark--sm" aria-hidden="true"><span class="ffc__mark-ff">FREE FIRE</span><span class="ffc__mark-max">MAX</span></p><p class="ffc__btitle">Player stats</p></div>
+                <div class="ffc__rank">
+                  <svg class="ffc__emblem" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="embG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1bd"/><stop offset=".5" stop-color="#e3b65a"/><stop offset="1" stop-color="#8a5c10"/></linearGradient></defs><path d="M32 4l7 6 9-1 2 9 8 5-4 8 4 8-8 5-2 9-9-1-7 6-7-6-9 1-2-9-8-5 4-8-4-8 8-5 2-9 9 1z" fill="#120d04" stroke="url(#embG)" stroke-width="2.5"/><path d="M32 17l4.4 9 9.6 1.4-7 6.8 1.7 9.6L32 39.3l-8.7 4.5 1.7-9.6-7-6.8 9.6-1.4z" fill="url(#embG)"/></svg>
+                  <div><em>Rank</em><b data-g="rank">Heroic</b></div>
+                </div>
+                <dl class="ffc__grid">
+                  <div><dt>Clash Squad</dt><dd>S<span data-ffcount="csSeason">39</span> · <span data-ffcount="csStars">45</span>★</dd></div>
+                  <div><dt>Heroic emblem</dt><dd data-ffcount="heroicEmblem">28</dd></div>
+                  <div><dt>Rifler</dt><dd data-ffcount="rifler">10</dd></div>
+                </dl>
+                <div class="ffc__badges" id="ffc-badges" aria-label="Badges"></div>
+                <div class="ffc__guns"><em>Loadout</em><b id="ffc-guns">Desert Eagle + M1887</b></div>
+                <button class="ffc__flipbtn" type="button" aria-controls="ffc" aria-label="Flip card back to the front"><span aria-hidden="true">↻</span> Flip</button>
+                <div class="ffc__foil" aria-hidden="true"></div>
+                <div class="ffc__sweep" aria-hidden="true"></div>
+              </section>
+            </div>
+          </div>
+          </div>
+                </div>
+                <p class="holo__hint label" aria-hidden="true"><span class="hint-desk">Move your cursor · click to flip</span><span class="hint-touch">Tilt or drag · tap to flip</span></p>
+              </div>
+              <figure class="ppanel__fig"><img src="assets/game/ingame.webp" alt="HEYYANIXX's Free Fire MAX character in game" loading="lazy" decoding="async"><figcaption class="label">In game</figcaption></figure>
+            </div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-arcade" aria-labelledby="pt-arcade" hidden>
+            <p class="ppanel__eyebrow">HEYY ARCADE · free mini games · play in your browser</p>
+            <div class="hxarc">
+              <button class="hxarc__card hxarc__card--main" type="button" data-play="sled"><i aria-hidden="true">🛷</i><span class="hxarc__txt"><em>MOST PLAYED</em><b>HEYY SLED RUSH</b><small>Rocket-sled runner · swipe, jump, grab IG/YT logos</small></span><span class="hxarc__go" aria-hidden="true">PLAY ▶</span></button>
+              <button class="hxarc__card" type="button" data-play="stack"><i aria-hidden="true">🧱</i><span class="hxarc__txt"><em>ADDICTIVE</em><b>HEYY STACK</b><small>One-tap tower · chain perfect drops</small></span><span class="hxarc__go" aria-hidden="true">PLAY ▶</span></button>
+              <button class="hxarc__card" type="button" data-play="jump"><i aria-hidden="true">🪽</i><span class="hxarc__txt"><em>RAGE GAME</em><b>HEYY JUMP</b><small>Tap to fly through neon towers</small></span><span class="hxarc__go" aria-hidden="true">PLAY ▶</span></button>
+              <button class="hxarc__card" type="button" data-play="aim"><i aria-hidden="true">🎯</i><span class="hxarc__txt"><em>PRO AIM</em><b>AIM RUSH 30s</b><small>Free Fire-style aim trainer · headshots x3</small></span><span class="hxarc__go" aria-hidden="true">PLAY ▶</span></button>
+              <a class="hxarc__card hxarc__card--learn" href="https://heyyanixx-learn.sites.tab.bot/" target="_blank" rel="noopener"><i aria-hidden="true">🎓</i><span class="hxarc__txt"><em>NEW</em><b>LEARN ARCADE</b><small>Learn coding, AI, typing & FF by playing</small></span><span class="hxarc__go" aria-hidden="true">OPEN ↗</span></a>
+            </div>
+            <div class="hxarc__foot"><button class="hxarc__all" type="button" data-play="">🎮 Open the arcade</button><a class="hxarc__chip" href="https://instagram.com/heyyy.anixx_" target="_blank" rel="noopener">Follow @heyyy.anixx_</a><a class="hxarc__chip hxarc__chip--yt" href="https://youtube.com/@smart_anish69?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a></div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-brief" aria-labelledby="pt-brief" hidden>
+            <div class="ppanel__split">
+              <div>
+                <p class="ppanel__eyebrow">Mission brief</p>
+                <h3 class="ppanel__h">Free Fire MAX since day one.</h3>
+                <p class="body">7+ years in one game. I play rank pushes and custom rooms, edit my own montages, and stream on YouTube. Guild: <b data-g="guild">The Mafia</b>. Style: <b data-g="style">Free-style</b>.</p>
+                <div class="ppanel__chips"><span>Lv. 72</span><span>Heroic</span><span>The Mafia</span><span>Rifler</span></div>
+              </div>
+              <div class="ppanel__shots ppanel__shots--brief ppanel__shots--vid">
+                <button class="g2vc g2vc--brief" type="button" data-video="assets/game/intro.mp4" data-poster="assets/game/intro-poster.webp" data-cap="My gaming edit" aria-label="Play my gaming edit with sound">
+                  <span class="g2vc__frame">
+                    <img class="g2vc__poster" src="assets/game/intro-poster.webp" alt="" width="432" height="768" loading="lazy" decoding="async">
+                    <video class="g2vc__vid" data-src="assets/game2/edit-loop.mp4" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1"></video>
+                    <i class="g2vc__tag" aria-hidden="true">My edit</i>
+                    <i class="g2vc__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-char" aria-labelledby="pt-char" hidden>
+            <p class="ppanel__eyebrow">Character sheet</p>
+            <div class="ppanel__sheet">
+              <img class="ppanel__turn" src="assets/game/sheet-turn.webp" alt="Character sheet: five-angle turnaround of my Free Fire character" loading="lazy" decoding="async">
+              <div class="ppanel__faces">
+                <img src="assets/game/sheet-face1.webp" alt="Face close-up, front" loading="lazy" decoding="async">
+                <img src="assets/game/sheet-face2.webp" alt="Face close-up, side" loading="lazy" decoding="async">
+                <img src="assets/game/sheet-detail-chest.webp" alt="Outfit detail" loading="lazy" decoding="async">
+                <img src="assets/game/sheet-detail-hand.webp" alt="Outfit detail: hands" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-stats" aria-labelledby="pt-stats" hidden>
+            <div class="ppanel__split ppanel__split--stats">
+              <div class="gstats" id="gstats">
+                <div class="gstat"><span>Level</span><b data-gst="level">72</b><i></i></div>
+                <div class="gstat"><span>Rank</span><b data-g="rank">Heroic</b><i></i></div>
+                <div class="gstat"><span>Clash Squad · Season 39</span><b><span data-gst="csStars">45</span>★</b><i></i></div>
+                <div class="gstat"><span>Heroic emblem</span><b data-gst="heroicEmblem">28</b><i></i></div>
+                <div class="gstat"><span>Rifler</span><b data-gst="rifler">10</b><i></i></div>
+                <div class="gstat"><span>Likes</span><b data-gst="likes">13,260</b><i></i></div>
+              </div>
+              <figure class="ppanel__profile"><img src="assets/game/profile-screen.webp" alt="My in-game Free Fire MAX profile screen" loading="lazy" decoding="async"><figcaption class="label">In-game profile</figcaption></figure>
+            </div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-loadout" aria-labelledby="pt-loadout" hidden>
+            <div class="ppanel__split">
+              <div>
+                <p class="ppanel__eyebrow">My loadout · <span data-g="style">Free-style</span></p>
+                <div class="loadout__row gta-guns" id="g-loadout"></div>
+                <p class="ppanel__small">Class: <b data-g="weaponClass">Rifler</b></p>
+              </div>
+              <div class="ppanel__shots">
+                <img src="assets/game/scene-gloves.webp" alt="Scene board: gloves on" loading="lazy" decoding="async">
+                <img src="assets/game/scene-desk.webp" alt="Scene board: glowing claws on the desk" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-badges" aria-labelledby="pt-badges" hidden>
+            <p class="ppanel__eyebrow">Badges · from my profile</p>
+            <div class="gbadges">
+              <div class="gb gb--honor"><em>CS S39</em><b>45</b><span>Clash Squad stars</span></div>
+              <div class="gb gb--honor"><em>Heroic emblem</em><b>28</b><span>Emblem</span></div>
+              <div class="gb gb--honor"><em>Rifler</em><b>10</b><span>Weapon honor</span></div>
+              <div class="gb gb--ribbon"><b>7 Years Old</b></div>
+              <div class="gb gb--ribbon"><b>Adshot Artist</b></div>
+              <div class="gb gb--ribbon"><b>Dawn Valor</b></div>
+            </div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-rooms" aria-labelledby="pt-rooms" hidden>
+            <div class="ppanel__split">
+              <div class="rooms">
+                <div>
+                  <p class="label">New</p>
+                  <h3 class="rooms__title">Paid Custom Rooms / Join the Squad</h3>
+                  <p class="body">Paid Free Fire custom rooms, and spots on my paid team. Tell me what you want and I'll send a quote.</p>
+                </div>
+                <div class="rooms__btns">
+                  <button class="btn btn--solid magnetic" type="button" data-request="Gaming" data-item="Paid Custom Rooms / Join the Squad"><span>Request a quote</span><i class="arrow">→</i></button>
+                  <a class="btn btn--glass magnetic" data-link="youtube" href="https://www.youtube.com/@smart_anish69"><span>Watch live</span><i class="arrow">↗</i></a>
+                </div>
+              </div>
+              <div class="ppanel__shots ppanel__shots--one"><img src="assets/game/scene-walkout.webp" alt="Scene board: walking out, ready to play" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+
+          <div class="ppanel" role="tabpanel" id="pp-live" aria-labelledby="pt-live" hidden>
+            <p class="ppanel__eyebrow">Live on YouTube · @Smart_anish69</p>
+            <div class="glive" id="g-live"></div>
+          </div>
+        </div>
+
+        <div class="pmenu__stamp" id="pmenu-stamp" aria-hidden="true"><b>RESPECT +</b><span>Player card</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2lb" id="g2-lb" hidden role="dialog" aria-modal="true" aria-label="Gear up photo">
+    <button class="g2lb__x" type="button" aria-label="Close">×</button>
+    <figure><img id="g2-lb-img" alt=""><video id="g2-lb-vid" controls playsinline preload="none" hidden></video><figcaption id="g2-lb-cap"></figcaption></figure>
+  </div>
+</section>
+
+<!-- LAB -->
+<section class="lab uni xr" id="lab" aria-labelledby="lab-title">
+  <div class="lab__sticky">
+    <div class="uni__bg" aria-hidden="true"></div>
+    <div class="xr__smoke" aria-hidden="true"><i class="xr__plate"></i><i class="xr__fog"></i><i class="xr__fog xr__fog--b"></i></div>
+    <canvas class="xr__embers" aria-hidden="true"></canvas>
+    <div class="uni__scene" aria-hidden="true">
+      <div class="uni__world">
+        <div class="uni__portal xr__iris"><i></i><i></i><i></i><b class="xr__glint"></b></div>
+        <svg class="uni__streaks uni__streaks--back" viewBox="0 0 1000 560"><g transform="rotate(-10 500 280)"><ellipse class="s1" cx="500" cy="280" rx="440" ry="150" style="color:#ff2a3a;stroke:#ff2a3a"/><ellipse class="s2" cx="500" cy="290" rx="380" ry="118" style="color:#ffffff;stroke:#ffe3e5"/></g><g transform="rotate(9 500 280)"><ellipse class="s3" cx="500" cy="270" rx="470" ry="175" style="color:#ff5468;stroke:#ff7a88"/></g></svg>
+        <div class="xr__char"><img class="xr__glow" src="assets/ailab/alterego.webp" alt="" width="760" height="1529" loading="lazy" decoding="async"><img class="xr__fig" src="assets/ailab/alterego.webp" alt="" width="760" height="1529" loading="lazy" decoding="async"><i class="xr__scan"></i></div>
+        <div class="uni__floorring"></div>
+        <svg class="uni__streaks uni__streaks--front" viewBox="0 0 1000 560"><g transform="rotate(-10 500 280)"><ellipse class="s1" cx="500" cy="280" rx="440" ry="150" style="color:#ff2a3a;stroke:#ff2a3a"/><ellipse class="s2" cx="500" cy="290" rx="380" ry="118" style="color:#ffffff;stroke:#ffe3e5"/></g><g transform="rotate(9 500 280)"><ellipse class="s3" cx="500" cy="270" rx="470" ry="175" style="color:#ff5468;stroke:#ff7a88"/></g></svg>
+        <div class="uni__tiles"></div>
+      </div>
+    </div>
+    <div class="xr__sig"><svg class="xr__sigsvg" viewBox="0 0 330 190" role="img" aria-label="heyyanixx signature"><defs><mask id="xr-sig-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="330" height="190"><g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M46 88 L51 80 L55 77 L54 75 L55 67 L75 21 L74 19 L75 21 L55 67 L54 75 L56 77 L58 77 L64 72 L58 77 L60 87 L70 85 L76 77 L79 75 L83 75 L87 78 L87 83 L86 84 L83 84 L79 86 L73 86 L72 85 L73 86 L79 86 L83 84 L87 84 L86 87 L88 85 L96 85 L95 93 L88 109 L88 113 L78 125 L72 127 L67 131 L57 142 L49 155 L48 158 L49 161 L53 161 L67 152 L78 136 L78 126 L78 134 L79 135 L84 133 L91 126 L97 124 L96 131 L86 148 L74 160 L72 161 L67 160 L67 153 L67 160 L72 161 L77 158 L83 152 L92 139 L96 131 L97 124 L104 116 L106 111 L103 109 L89 113 L103 109 L107 111 L110 109 L110 101 L115 86 L107 84 L107 79 L109 76 L107 79 L107 84 L108 85 L118 86 L124 83 L132 82 L137 76 L138 73 L137 76 L133 80 L133 82 L143 82 L142 87 L144 81 L147 79 L152 79 L156 75 L155 78 L157 80 L154 83 L150 92 L156 81 L158 81 L162 86 L163 85 L173 84 L172 88 L173 84 L178 81 L182 86 L191 86 L199 81 L199 78 L196 73 L199 78 L206 73 L199 78 L199 82 L203 87 L207 87 L217 78 L207 87 L203 87 L199 81 L191 86 L182 86 L178 82 L179 78 L176 73 L179 78 L186 73 L183 76 L180 77 L179 80 L176 83 L162 86 L158 81 L156 81 L164 74 L165 70 L164 74 L157 80 L155 77 L152 79 L147 79 L143 82 L133 82 L133 81 L128 83 L124 83 L118 86 L115 86 L110 101 L110 107 L111 108 L116 108 L135 104 L184 104 L192 106 L209 106 L219 109 L209 106 L192 106 L184 104 L135 104 L116 108 L111 108 L110 107 L110 109 L106 111 L104 116 L96 125 L91 126 L84 133 L79 135 L78 134 L78 136 L65 154 L61 155 L53 161 L49 161 L48 160 L49 155 L57 142 L67 131 L72 127 L78 125 L88 113 L88 109 L95 93 L96 85 L99 80 L96 85 L88 85 L87 86 L87 84 L86 84 L87 79 L90 77 L87 79 L85 76 L79 75 L72 81 L72 83 L70 85 L60 87 L59 86 L59 78 L55 76" pathLength="1" style="--d:2.57s;--dl:0.15s"/><path d="M170 52 L174 52 L176 50 L174 52" pathLength="1" style="--d:0.12s;--dl:2.72s"/><path d="M226 88 L229 88" pathLength="1" style="--d:0.12s;--dl:2.84s"/><path d="M269 88 L272 88" pathLength="1" style="--d:0.12s;--dl:2.96s"/></g></mask></defs><image class="xr__sigink" href="assets/ailab/signature.webp" width="330" height="190" mask="url(#xr-sig-mask)"/><image class="xr__sigfull" href="assets/ailab/signature.webp" width="330" height="190" style="--end:3.08s"/></svg></div>
+    <div class="lab__overlay">
+      <p class="label reveal"><span class="idx">04</span> AI Lab <b>·</b> Alter ego</p>
+      <h2 class="lab__title" id="lab-title"><span class="split" data-split>AI LAB</span></h2>
+      <p class="uni__sub">The creative universe</p>
+      <p class="body lab__desc reveal">I don't just use AI. I build with it. Experiments in AI video, prompts, agents and 3D web.</p>
+    </div>
+    <p class="lab__words" aria-label="Experiment. Create. Evolve.">
+      <span class="w">EXPERIMENT.</span><span class="w">CREATE.</span><span class="w">EVOLVE.</span>
+    </p>
+    <ul class="uni__list" aria-label="AI tools I use"></ul>
+    <div class="lab__hint label" aria-hidden="true"><span class="hint-desk">Move your cursor</span><span class="hint-touch">Tilt or scroll</span></div>
+  </div>
+</section>
+
+
+
+<section class="aiworks section" id="ai-lab" aria-labelledby="aiworks-title">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="label reveal"><span class="idx">04</span> Experiments</p>
+      <h2 class="h2" id="aiworks-title"><span class="split" data-split>I DON'T JUST USE AI.</span> <span class="split" data-split>I BUILD WITH IT.</span></h2>
+    </div>
+    <div class="labcards" id="labcards"></div>
+  </div>
+</section>
+
+<!-- STORE -->
+<section class="store section" id="store" aria-labelledby="store-title">
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="label reveal"><span class="idx">05</span> Digital store</p>
+        <h2 class="h2 h2--xl" id="store-title"><span class="split" data-split>HEYYANIXX</span> <span class="split" data-split>STORE</span></h2>
+      </div>
+      <p class="body reveal store__note">No checkout on the site yet. Tap Buy and your order request comes to me by email or Instagram DM; I'll reply with payment details and delivery.</p>
+    </div>
+    <div class="shelf" id="shelf"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about" aria-labelledby="about-title">
+  <div class="wrap about__grid">
+    <div class="about__text">
+      <p class="label reveal"><span class="idx">06</span> About</p>
+      <h2 class="h2" id="about-title"><span class="split" data-split>MORE THAN</span> <span class="split" data-split>AN EDITOR.</span></h2>
+      <p class="lead reveal">I'm HEYYANIXX — a creator focused on editing, AI, gaming and digital experiences.</p>
+      <p class="body reveal">I create cinematic visuals, AI-powered content, interactive websites and creative digital products. From gaming edits to AI automation, I'm building a creative studio where technology meets visual storytelling.</p>
+      <ul class="chips reveal" aria-label="What I do">
+        <li>7+ Years Gaming</li><li>Video Editing</li><li>AI Creation</li><li>Web Design</li><li>AI Automation</li>
+      </ul>
+    </div>
+    <div class="about__card-wrap reveal" data-parallax="-0.06">
+      <div class="idcard tilt" data-tilt="14">
+        <div class="idcard__glare"></div>
+        <div class="idcard__top label"><span>Creator ID</span><span>HX/01</span></div>
+        <div class="idcard__avatar" id="avatar">
+          <div class="avatar">
+            <span class="avatar__ring r1"></span><span class="avatar__ring r2"></span><span class="avatar__ring r3"></span>
+            <span class="avatar__core"></span>
+            <span class="avatar__scan"></span>
+          </div>
+        </div>
+        <div class="idcard__name">HEYYANIXX</div>
+        <dl class="idcard__rows">
+          <div><dt>Role</dt><dd>Editor / AI Creator / Gamer</dd></div>
+          <div><dt>Game</dt><dd>Free Fire MAX · 7+ yrs</dd></div>
+          <div><dt>Insta</dt><dd>@heyyy.anixx_</dd></div>
+          <div><dt>YouTube</dt><dd>@Smart_anish69</dd></div>
+        </dl>
+        <div class="idcard__foot"><span class="barcode" aria-hidden="true"></span><span class="label">Visual Artist</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap setup" id="setup">
+    <div class="setup__head">
+      <p class="label reveal">My setup</p>
+      <h3 class="setup__title reveal" data-setup="title">ASUS TUF Gaming A15 — where the work happens</h3>
+    </div>
+    <div class="setup__stage lap3d" id="lap3d">
+      <!-- 3D path: a sticky full-screen stage inside a tall scroll space (laptop3d.js) -->
+      <div class="lap3d__track">
+        <div class="lap3d__sticky" aria-hidden="true">
+          <canvas class="lap3d__canvas"></canvas>
+          <video class="lap3d__video" muted loop playsinline preload="none" poster="assets/setup/wallpaper.webp" tabindex="-1"><source src="assets/setup/wallpaper.webm" data-src-mobile="assets/setup/wallpaper-540.webm" type="video/webm"><source src="assets/setup/wallpaper.mp4" data-src-mobile="assets/setup/wallpaper-540.mp4" type="video/mp4"></video>
+          <span class="lap3d__shade"></span>
+          <p class="lap3d__hint"><i></i>Scroll to open</p>
+        </div>
+      </div>
+      <!-- fallback: reduced motion / no WebGL keep the original open CSS laptop -->
+      <div class="lap3d__fallback reveal">
+        <div class="laptop" id="laptop">
+          <div class="laptop__lid">
+            <div class="laptop__screen">
+              <video id="setup-video" muted loop playsinline preload="none" poster="assets/setup/wallpaper.webp" aria-label="My laptop home screen — live wallpaper on my ASUS TUF Gaming A15"><source src="assets/setup/wallpaper-540.webm" type="video/webm"><source src="assets/setup/wallpaper-540.mp4" type="video/mp4"></video>
+              <span class="laptop__glare" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="laptop__base" aria-hidden="true"><span></span></div>
+          <div class="laptop__glow" aria-hidden="true"></div>
+        </div>
+      </div>
+      <ul class="setup__chips reveal" id="setup-chips" aria-label="Setup"></ul>
+    </div>
+    <figure class="bts reveal" id="bts">
+      <div class="bts__frame tilt" data-tilt="8"><img src="assets/setup/studio.webp" alt="HEYYANIXX on set at a studio shoot, in a black blazer, leaning on a stool while the photographer shoots" width="720" height="1149" loading="lazy" decoding="async"><span class="bts__bars" aria-hidden="true"></span></div>
+      <figcaption class="label">Behind the scenes · studio shoot</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CREATOR -->
+<section class="creator section" id="creator" aria-labelledby="creator-title">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="label reveal"><span class="idx">07</span> Creator</p>
+      <h2 class="h2 h2--xl" id="creator-title"><span class="split" data-split>CREATING</span> <span class="split" data-split>IN PUBLIC.</span></h2>
+    </div>
+    <a class="ytcard reveal" data-link="youtube" href="https://www.youtube.com/@smart_anish69">
+      <span class="ytcard__banner"><img src="assets/yt/banner.jpg" alt="" width="1600" height="265" loading="lazy" decoding="async"></span>
+      <span class="ytcard__row">
+        <span class="ytcard__avatar"><img src="assets/yt/avatar.jpg" alt="" width="360" height="360" loading="lazy" decoding="async"></span>
+        <span class="ytcard__info">
+          <span class="ytcard__name" data-yt="name">Smart_anish⁶⁹</span>
+          <span class="ytcard__meta"><span data-yt="handle">@Smart_anish69</span> · <b data-ytnum="subscribers">140</b> subscribers · <b data-ytnum="videos">21</b> videos</span>
+          <span class="ytcard__tag" data-yt="tagline">Welcome to my Gaming World!</span>
+        </span>
+        <span class="ytcard__sub">Subscribe <i class="arrow">↗</i></span>
+      </span>
+    </a>
+    <div class="socials reveal">
+      <a class="btn btn--glass magnetic" data-link="youtube" href="https://www.youtube.com/@smart_anish69"><span>YouTube · @Smart_anish69</span><i class="arrow">↗</i></a>
+      <a class="btn btn--glass magnetic" data-link="instagram" href="https://www.instagram.com/heyyy.anixx_/"><span>@heyyy.anixx_</span><i class="arrow">↗</i></a>
+    </div>
+  </div>
+</section>
+
+<!-- GET THE APP -->
+<section class="getapp section" id="get-app" aria-labelledby="getapp-title">
+  <div class="getapp__card reveal">
+    <div class="getapp__icon" aria-hidden="true"><img src="https://heyyanixx-app.sites.tab.bot/icon-192.png" alt="" width="84" height="84" loading="lazy"></div>
+    <div class="getapp__text">
+      <p class="label">Official app</p>
+      <h2 id="getapp-title">Get the <span>HEYYANIXX</span> app</h2>
+      <p>Portfolio, gaming, AI Lab and hire-me — all in one app. Free, Android.</p>
+      <div class="getapp__btns">
+        <a class="btn btn--solid magnetic" href="https://github.com/heyyanixx/heyyanixx-app/releases/latest/download/heyyanixx-app-debug.apk" download rel="noopener"><span>⬇ Download for Android</span><i class="arrow">↗</i></a>
+        <a class="btn btn--glass magnetic" href="https://heyyanixx-app.sites.tab.bot/" target="_blank" rel="noopener"><span>Open web app</span><i class="arrow">↗</i></a>
+      </div>
+      <p class="getapp__note">APK · ~4.5 MB · Android 7+ · Install: open the file → allow "Install unknown apps" once</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="ig section" id="instagram" aria-labelledby="ig-title">
+  <div class="ig__aura" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section__head section__head--row">
+      <div>
+        <p class="label reveal"><span class="idx">IG</span> Instagram · @heyyy.anixx_</p>
+        <h2 class="h2 h2--xl" id="ig-title"><span class="split" data-split>ON THE GRID.</span></h2>
+      </div>
+      <p class="body reveal ig__intro">Reels, edits and moments, straight from Instagram. Drag the ring, or tap a post to play it.</p>
+    </div>
+  </div>
+
+  <div class="ring3d reveal" id="ring3d" aria-label="Instagram posts in a 3D ring. Drag to spin, tap a post to open it.">
+    <div class="ring3d__floor" aria-hidden="true"></div>
+    <div class="ring3d__stage"><div class="ring3d__spin" id="ring-spin"></div></div>
+    <div class="ring3d__hint label" aria-hidden="true"><span class="hint-desk">Drag to spin</span><span class="hint-touch">Swipe to spin</span> · tap to play</div>
+  </div>
+
+  <div class="wrap ig__stage">
+    <div class="ig__profile">
+      <div class="orb reveal" id="orb" aria-hidden="true">
+        <span class="orb__halo"></span>
+        <span class="orb__orbit orb__orbit--a"><i></i></span>
+        <span class="orb__orbit orb__orbit--b"><i></i></span>
+        <span class="orb__ring"></span>
+        <span class="orb__face"><img src="assets/ig/profile.jpg" alt="" width="320" height="320" loading="lazy" decoding="async"></span>
+        <span class="orb__sheen"></span>
+      </div>
+      <div class="ig__meta">
+        <a class="ig__handle reveal" data-link="instagram" href="https://www.instagram.com/heyyy.anixx_/">@heyyy.anixx_</a>
+        <p class="ig__name reveal"><span data-ig="name">Aɴɪsʜ...🎧</span> · <span data-ig="role">Editor</span></p>
+        <blockquote class="ig__bio reveal" data-ig="bio">AND IN THE END WHAT MATTERS IS WHO STAYED !!! ❤️‍🩹</blockquote>
+        <dl class="ig__stats reveal">
+          <div><dd data-count="posts">6</dd><dt>Posts</dt></div>
+          <div><dd data-count="followers">9,744</dd><dt>Followers</dt></div>
+          <div><dd data-count="following">2</dd><dt>Following</dt></div>
+        </dl>
+        <div class="follow-wrap reveal">
+          <a class="follow magnetic" data-link="instagram" href="https://www.instagram.com/heyyy.anixx_/">
+            <span class="follow__glow" aria-hidden="true"></span>
+            <span class="follow__in"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="7" width="34" height="34" rx="10"/><circle cx="24" cy="24" r="8"/><circle cx="34" cy="14" r="1.6"/></svg><span>Follow on Instagram</span><i class="arrow">↗</i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="phone-wrap reveal">
+      <div class="phone tilt" id="phone" data-tilt="16">
+        <div class="phone__glare" aria-hidden="true"></div>
+        <div class="phone__screen">
+          <div class="phone__island" aria-hidden="true"></div>
+          <div class="feed">
+            <div class="feed__bar"><span class="feed__user">heyyy.anixx_</span><span class="feed__dots" aria-hidden="true">•••</span></div>
+            <div class="feed__head">
+              <span class="feed__pic"><img src="assets/ig/profile.jpg" alt="" width="320" height="320" loading="lazy" decoding="async"></span>
+              <div class="feed__nums">
+                <div><b data-ig-num="posts">6</b><span>posts</span></div>
+                <div><b data-ig-num="followers">9,744</b><span>followers</span></div>
+                <div><b data-ig-num="following">2</b><span>following</span></div>
+              </div>
+            </div>
+            <p class="feed__name" data-ig="name">Aɴɪsʜ...🎧</p>
+            <p class="feed__role" data-ig="role">Editor</p>
+            <p class="feed__bio" data-ig="bio">AND IN THE END WHAT MATTERS IS WHO STAYED !!! ❤️‍🩹</p>
+            <a class="feed__follow" data-link="instagram" href="https://www.instagram.com/heyyy.anixx_/">Follow</a>
+            <div class="feed__tabs" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+            <div class="feed__grid" id="feed-grid"></div>
+          </div>
+        </div>
+      </div>
+      <div class="phone__shadow" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HELP -->
+<section class="help section" id="help" aria-labelledby="help-title">
+  <div class="wrap help__grid">
+    <div>
+      <p class="label reveal"><span class="idx">?</span> Help</p>
+      <h2 class="h2" id="help-title"><span class="split" data-split>NEED HELP?</span></h2>
+      <p class="body reveal help__note">Search the answers, or reach me directly.</p>
+      <div class="help__btns reveal">
+        <button type="button" class="btn btn--glass" id="wa-help"><span>Chat on WhatsApp</span><i class="arrow">↗</i></button>
+        <a class="btn btn--glass" data-contact="email" href="mailto:contact@heyyanixx.de5.net"><span>Email</span><i class="arrow">↗</i></a>
+        <a class="btn btn--glass" href="https://ig.me/m/heyyy.anixx_" target="_blank" rel="noopener"><span>Instagram DM</span><i class="arrow">↗</i></a>
+      </div>
+      <p class="wa-chip__line reveal">WhatsApp: tap the button, the username @heyyy.anixx_ is copied — paste it in WhatsApp search.</p>
+    </div>
+    <div class="help__panel reveal">
+      <label class="help__search" for="faq-q"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="faq-q" type="search" placeholder="Search questions — prices, custom rooms, contact…" autocomplete="off"></label>
+      <div class="faq" id="faq"></div>
+      <p class="faq__empty" id="faq-empty" hidden>No answer for that yet — <a href="#contact">ask me directly</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / WORK WITH ME -->
+<section class="contact section" id="contact" aria-labelledby="contact-title">
+  <div class="contact__orb" aria-hidden="true"></div>
+  <div class="wrap contact__grid">
+    <div class="contact__cta">
+      <p class="label reveal"><span class="idx">08</span> Work with me</p>
+      <h2 class="contact__title" id="contact-title"><span class="split" data-split>LET'S BUILD</span> <span class="split" data-split>SOMETHING.</span></h2>
+      <p class="contact__sub reveal">Tell me what you need in six quick steps. Your request opens as an email to me, or copy it into an Instagram DM, and I reply personally.</p>
+      <div class="contact__btns reveal">
+        <a class="btn btn--glass magnetic" data-contact="email" href="mailto:contact@heyyanixx.de5.net"><span>Email</span><i class="arrow">↗</i></a>
+        <a class="btn btn--glass magnetic" data-link="instagram" href="https://www.instagram.com/heyyy.anixx_/"><span>Instagram</span><i class="arrow">↗</i></a>
+        <a class="btn btn--glass magnetic" data-link="youtube" href="https://www.youtube.com/@smart_anish69"><span>YouTube</span><i class="arrow">↗</i></a>
+      </div>
+      <div class="wa-chip reveal">
+        <button type="button" class="wa-chip__btn" data-copy="@heyyy.anixx_" aria-label="Copy WhatsApp username @heyyy.anixx_"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5A12.4 12.4 0 0 0 5.3 22.2L3.6 28.4l6.4-1.7A12.4 12.4 0 1 0 16 3.5z" fill="none" stroke="currentColor" stroke-width="2.2"/></svg><span><em>WhatsApp</em><b>@heyyy.anixx_</b></span><i class="wa-chip__copy">Copy</i></button>
+        <p class="wa-chip__line">Search this username on WhatsApp.</p>
+      </div>
+      <p class="contact__dm reveal">Or DM me on Instagram — <a data-link="instagram" href="https://www.instagram.com/heyyy.anixx_/">@heyyy.anixx_</a> · <a data-contact="email" href="mailto:contact@heyyanixx.de5.net">contact@heyyanixx.de5.net</a></p>
+    </div>
+    <div class="flow glass reveal" id="flow">
+      <div class="flow__top"><span class="label" id="flow-step-label">Step 1 of 6</span><span class="flow__bar"><span id="flow-bar"></span></span></div>
+      <form id="flow-form" novalidate>
+        <fieldset class="fstep is-on" data-step="1">
+          <legend class="fstep__q">What do you need?</legend>
+          <div class="pills" data-name="category">
+            <button type="button" class="pill" data-v="Video">Video</button><button type="button" class="pill" data-v="Photo">Photo</button><button type="button" class="pill" data-v="AI">AI</button><button type="button" class="pill" data-v="Website">Website</button><button type="button" class="pill" data-v="AI Agent">AI Agent</button><button type="button" class="pill" data-v="Gaming">Gaming</button><button type="button" class="pill" data-v="Store">Store</button><button type="button" class="pill" data-v="Other">Other</button>
+          </div>
+        </fieldset>
+        <fieldset class="fstep" data-step="2">
+          <legend class="fstep__q">Tell me about your project</legend>
+          <div class="field"><input id="f-item" name="item" type="text" placeholder=" " autocomplete="off"><label for="f-item">Service or product (optional)</label></div>
+          <div class="field"><textarea id="f-msg" name="message" rows="4" placeholder=" " required></textarea><label for="f-msg">What do you want made?</label></div>
+        </fieldset>
+        <fieldset class="fstep" data-step="3">
+          <legend class="fstep__q">Reference</legend>
+          <p class="fstep__help">No uploads here — paste a Google Drive, Instagram or YouTube link to your files or an example you like.</p>
+          <div class="field"><input id="f-ref" name="reference" type="url" inputmode="url" placeholder=" " autocomplete="off"><label for="f-ref">Reference link (optional)</label></div>
+        </fieldset>
+        <fieldset class="fstep" data-step="4">
+          <legend class="fstep__q">Budget</legend>
+          <div class="pills" data-name="budget">
+            <button type="button" class="pill" data-v="Under ₹500">Under ₹500</button><button type="button" class="pill" data-v="₹500–1,000">₹500–1,000</button><button type="button" class="pill" data-v="₹1,000–2,500">₹1,000–2,500</button><button type="button" class="pill" data-v="₹2,500–5,000">₹2,500–5,000</button><button type="button" class="pill" data-v="₹5,000–10,000">₹5,000–10,000</button><button type="button" class="pill" data-v="₹10,000+">₹10,000+</button><button type="button" class="pill" data-v="Not sure yet">Not sure yet</button>
+          </div>
+        </fieldset>
+        <fieldset class="fstep" data-step="5">
+          <legend class="fstep__q">Deadline</legend>
+          <div class="pills" data-name="deadline">
+            <button type="button" class="pill" data-v="ASAP (24–48 h)">ASAP (24–48 h)</button><button type="button" class="pill" data-v="This week">This week</button><button type="button" class="pill" data-v="Within 2 weeks">Within 2 weeks</button><button type="button" class="pill" data-v="This month">This month</button><button type="button" class="pill" data-v="Flexible">Flexible</button>
+          </div>
+        </fieldset>
+        <fieldset class="fstep" data-step="6">
+          <legend class="fstep__q">How do I reach you?</legend>
+          <div class="field"><input id="f-name" name="name" type="text" autocomplete="name" placeholder=" " required><label for="f-name">Your name</label></div>
+          <div class="field"><input id="f-contact" name="contact" type="text" autocomplete="tel" placeholder=" " required><label for="f-contact">WhatsApp number or email</label></div>
+        </fieldset>
+        <div class="fdone" id="flow-done" hidden>
+          <p class="fdone__tick" aria-hidden="true">✓</p>
+          <p class="fdone__title">REQUEST READY ✓</p>
+          <p class="fdone__text" id="flow-done-text">Send it and HEYYANIXX replies personally.</p>
+          <pre class="fdone__summary" id="flow-summary"></pre>
+          <div class="fdone__btns">
+            <a class="btn btn--solid" id="flow-mail" href="mailto:contact@heyyanixx.de5.net"><span>Send by email</span><i class="arrow">↗</i></a>
+            <a class="btn btn--glass" id="flow-dm" href="https://ig.me/m/heyyy.anixx_" target="_blank" rel="noopener"><span>or DM on Instagram</span><i class="arrow">↗</i></a>
+            <button type="button" class="fdone__copy" id="flow-copy">Copy request</button>
+          </div>
+          <p class="fdone__hint">Copy it to paste into an Instagram DM, or WhatsApp @heyyy.anixx_.</p>
+          <button type="button" class="fdone__again" id="flow-again">Start a new request</button>
+        </div>
+        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        <div class="flow__nav" id="flow-nav">
+          <button type="button" class="icon-btn flow__back" id="flow-back" aria-label="Back" disabled>←</button>
+          <button type="button" class="btn btn--solid magnetic-soft flow__next" id="flow-next"><span>Next</span><i class="arrow">→</i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__big" aria-hidden="true"><span>HEYYANIXX</span></div>
+  <div class="wrap footer__row">
+    <p class="label">Video Editor • AI Creator • Gamer • YouTuber</p>
+    <nav class="footer__social" aria-label="Social">
+      <a data-link="instagram" href="https://www.instagram.com/heyyy.anixx_/">@heyyy.anixx_</a>
+      <a data-link="youtube" href="https://www.youtube.com/@smart_anish69">YouTube</a>
+      <button type="button" class="footer__wa" data-copy="@heyyy.anixx_" aria-label="Copy WhatsApp username @heyyy.anixx_">WhatsApp @heyyy.anixx_</button>
+      <a data-contact="email" href="mailto:contact@heyyanixx.de5.net">Email</a>
+      <a href="https://heyyanixx.de5.net/">HEYYANIXX Studio ↗</a>
+      <a href="#hero">Back to top ↑</a>
+    </nav>
+    <p class="label footer__copy">© 2026 HEYYANIXX. ALL RIGHTS RESERVED. · <a href="privacy/" style="color:inherit">Privacy Policy</a></p>
+  </div>
+  <p class="sr-only">HEYYANIXX</p>
+</footer>
+
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project viewer" hidden>
+  <div class="lightbox__bg" data-close></div>
+  <div class="lightbox__frame">
+    <div class="lightbox__media" id="lb-media"></div>
+    <div class="lightbox__info">
+      <span class="label" id="lb-cat"></span>
+      <h3 id="lb-title"></h3>
+      <p class="body" id="lb-desc"></p>
+      <a class="lb-ig" id="lb-link" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="7" width="34" height="34" rx="10"/><circle cx="24" cy="24" r="8"/><circle cx="34" cy="14" r="1.6"/></svg><span>View on Instagram</span><i class="arrow">↗</i></a>
+      <div class="lightbox__nav">
+        <button class="icon-btn" id="lb-prev" aria-label="Previous project">←</button>
+        <span class="label" id="lb-count"></span>
+        <button class="icon-btn" id="lb-next" aria-label="Next project">→</button>
+      </div>
+    </div>
+    <button class="lightbox__close icon-btn" data-close aria-label="Close viewer">✕</button>
+  </div>
+</div>
+
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Search the site" hidden>
+  <div class="palette__bg" data-pclose></div>
+  <div class="palette__box">
+    <label class="palette__in" for="pal-q"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="pal-q" type="search" placeholder="Search services, prices, sections, FAQ…" autocomplete="off"><kbd>Esc</kbd></label>
+    <ul class="palette__list" id="pal-list" role="listbox"></ul>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
